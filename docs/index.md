@@ -24,4 +24,4 @@ We defer to stylistic preferences in the target codebase, but here are the JavaS
 - Semicolons required
 
 ## Questions/Comments
-For any questions or comments, please contact charlie.tysse@searchdiscovery.com.
+For any questions or comments, please contact steven.rowe@kenvue.com.
