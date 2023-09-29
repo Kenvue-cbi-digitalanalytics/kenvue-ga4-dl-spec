@@ -1,6 +1,6 @@
 site_name: Kenvue Marketing Analytics Data Layer Schema | GA4
 repo_url: https://github.com/Kenvue-cbi-digitalanalytics/kenvue-ga4-dl-spec
-repo_name: Kenvue-cbi-digitalanalytics/kenvue-ga4-dl-spec
+repo_name: Kenvue | Analytics Data Layer Spec
 edit_uri: edit/main/docs/
 theme:
   name: material
