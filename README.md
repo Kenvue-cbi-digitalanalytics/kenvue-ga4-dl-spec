@@ -31,4 +31,4 @@ We defer to stylistic preferences in the target codebase, but here are the JavaS
 We welcome contributions! If you'd like to contribute, please review our [Contributing Guide](./CONTRIBUTING.md).
 
 ## Questions/Comments
-For any questions or comments, please [open a discussion](https://github.com/searchdiscovery/client-kenvue-ga4-dl-spec/discussions).
+For any questions or comments, please [open a discussion](https://github.com/Kenvue-cbi-digitalanalytics/kenvue-ga4-dl-spec/discussions).
