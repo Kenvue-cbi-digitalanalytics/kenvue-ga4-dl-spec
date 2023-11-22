@@ -15,9 +15,13 @@ Do not fire this event for product links found in menus.
 
 // Code:
 window.dataLayer = window.dataLayer || [];
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({ event_data: null, ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "select_item",
+  event_data: {
+    identifier: "<identifier>", // REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc
+    name: '<name>' // REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart
+},
   ecommerce: {
     facets: "<facets>", // contextual | string - double delimited (:)(~) | category:skin_health~featured_as:best_seller	
     items: "<items>", // REQUIRED | array | ex. [{item_id: "070501110485", item_name: "Neutrogena Hydro Boost Gel-Cream"}]	
@@ -32,8 +36,10 @@ dataLayer.push({
 ```
 
 ## Variable Definitions
-|Field|Type|Required|Description |Example|Maximum Length|
-| --- | --- | --- | --- | --- | --- |
+|Field|Type|Required|Description |Example|Maximum Length|Minimum|
+| --- | --- | --- | --- | --- | --- | --- |
+|**identifier**|`string`|required|The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|`contact`, `lead_generation`|`100`|
+|**name**|`string`|required|The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|`100`|
 |facets|delimited string|contextual|A double-delimited string of key/value pairs representing the refinements that were applied to this search. Only set if the list type is a search result or filter_by_group.|`category:skin_health\~skin_concern:acne\ ~featured_as:best_seller`|`100`|
 |items|array of [items](../../schemas/item.md)|required|Populate with only the item that was selected. This should always be a single item array.|`[{item_id: "070501110485", item_name: "Neutrogena Hydro Boost Gel-Cream with Hyaluronic Acid for Extra-Dry Skin"}]`|
 |item_list_id|string|required|The computer-readable machine name of the list the item showed up in. Use UUID provided by the component if no more specific ID is available.|`12345abcde12345`|`100`|
@@ -41,4 +47,4 @@ dataLayer.push({
 |list_type|string|required|The type of list the item was found in.|`cards, search_results`|`100`|
 |search_term|string|contextual|The final search term submitted after any correction has been performed. Only set if the `list_type` is `search_results`.|`sunscreen`|`100`|
 |search_type|string|contextual|The type of search performed. Only set if the `list_type` is `search_results`.|`site, filter_by_group`|`100`|
-|index|integer|required|The numerical index of the item position (1-indexed). For instance, if this is the 5th search result, you would send 5 here. If this is the 3rd card in a single row, send 3. If this is the 2nd item in the 3rd row of a 3-up card layout, send 8 (3 + 3 + 2).|`5`|`100`|
+|index|integer|required|The numerical index of the item position (1-indexed). For instance, if this is the 5th search result, you would send 5 here. If this is the 3rd card in a single row, send 3. If this is the 2nd item in the 3rd row of a 3-up card layout, send 8 (3 + 3 + 2).|`5`|`100`|`1`|
