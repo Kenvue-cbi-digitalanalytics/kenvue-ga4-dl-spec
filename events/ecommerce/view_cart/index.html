@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.10">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fad675c6.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
@@ -1767,14 +1767,18 @@
       
         <li class="md-nav__item">
   <a href="#javascript-code" class="md-nav__link">
-    Javascript Code
+    <span class="md-ellipsis">
+      Javascript Code
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#variable-definitions" class="md-nav__link">
-    Variable Definitions
+    <span class="md-ellipsis">
+      Variable Definitions
+    </span>
   </a>
   
 </li>
@@ -3296,14 +3300,18 @@
       
         <li class="md-nav__item">
   <a href="#javascript-code" class="md-nav__link">
-    Javascript Code
+    <span class="md-ellipsis">
+      Javascript Code
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#variable-definitions" class="md-nav__link">
-    Variable Definitions
+    <span class="md-ellipsis">
+      Variable Definitions
+    </span>
   </a>
   
 </li>
@@ -3334,15 +3342,19 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Code:</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[];</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// Clear the previous ecommerce object.</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// Clear the previous ecommerce object.</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;view_cart&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">currency</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;currency&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;items&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | array | ex. [{item_id: &quot;test&quot;}]</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;value&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | number | ex. 7.77 | pattern: ^\d\.\d\d$ | min. 0.00</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">});</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;identifier&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;name&gt;&#39;</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">},</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nx">currency</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;currency&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. USD | pattern: ^[A-Z]{3}$ | min. 3, max. 3</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;items&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | array | ex. [{item_id: &quot;test&quot;}]</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;value&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | number | ex. 7.77 | pattern: ^\d\.\d\d$ | min. 0.00</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">});</span>
 </code></pre></div>
 <h2 id="variable-definitions">Variable Definitions</h2>
 <table>
@@ -3360,6 +3372,28 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong>identifier</strong></td>
+<td><code>string</code></td>
+<td>required</td>
+<td>The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.</td>
+<td><code>contact</code>, <code>lead_generation</code></td>
+<td></td>
+<td></td>
+<td><code>100</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td><code>string</code></td>
+<td>required</td>
+<td>The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.</td>
+<td><code>contact</code>, <code>lead_generation</code></td>
+<td></td>
+<td></td>
+<td><code>100</code></td>
+<td></td>
+</tr>
 <tr>
 <td>currency</td>
 <td>string</td>
@@ -3401,7 +3435,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 22, 2023</span>
       
     
   </small>
@@ -3453,7 +3487,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
     
   </body>

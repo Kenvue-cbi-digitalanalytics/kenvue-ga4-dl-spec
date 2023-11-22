@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.10">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fad675c6.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
@@ -1747,21 +1747,27 @@
       
         <li class="md-nav__item">
   <a href="#html-data-attributes" class="md-nav__link">
-    HTML Data Attributes
+    <span class="md-ellipsis">
+      HTML Data Attributes
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#javascript-code" class="md-nav__link">
-    Javascript Code
+    <span class="md-ellipsis">
+      Javascript Code
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#variable-definitions" class="md-nav__link">
-    Variable Definitions
+    <span class="md-ellipsis">
+      Variable Definitions
+    </span>
   </a>
   
 </li>
@@ -3303,21 +3309,27 @@
       
         <li class="md-nav__item">
   <a href="#html-data-attributes" class="md-nav__link">
-    HTML Data Attributes
+    <span class="md-ellipsis">
+      HTML Data Attributes
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#javascript-code" class="md-nav__link">
-    Javascript Code
+    <span class="md-ellipsis">
+      Javascript Code
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#variable-definitions" class="md-nav__link">
-    Variable Definitions
+    <span class="md-ellipsis">
+      Variable Definitions
+    </span>
   </a>
   
 </li>
@@ -3360,17 +3372,21 @@
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// Code:</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[];</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// Clear the previous ecommerce object.</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// Clear the previous ecommerce object.</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;select_promotion&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nx">creative_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;creative_name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. summer_banner2 </span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nx">creative_slot</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;creative_slot&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. featured_hero_splash_1 </span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nx">promotion_id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;promotion_id&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. P_12345</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nx">promotion_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;promotion_name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | summer_sale_2023</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;items&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | array | ex. [{item_id: &quot;test&quot;}]</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">});</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;identifier&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;name&gt;&#39;</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">},</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nx">creative_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;creative_name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. summer_banner2 </span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nx">creative_slot</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;creative_slot&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. featured_hero_splash_1 </span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="nx">promotion_id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;promotion_id&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. P_12345</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nx">promotion_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;promotion_name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | summer_sale_2023</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;items&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | array | ex. [{item_id: &quot;test&quot;}]</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="p">});</span>
 </code></pre></div>
 <h2 id="variable-definitions">Variable Definitions</h2>
 <table>
@@ -3381,10 +3397,26 @@
 <th>Required</th>
 <th>Description</th>
 <th>Example</th>
-<th>Max Length</th>
+<th>Maximum Length</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong>identifier</strong></td>
+<td><code>string</code></td>
+<td>required</td>
+<td>The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.</td>
+<td><code>contact</code>, <code>lead_generation</code></td>
+<td><code>100</code></td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td><code>string</code></td>
+<td>required</td>
+<td>The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.</td>
+<td><code>contact</code>, <code>lead_generation</code></td>
+<td><code>100</code></td>
+</tr>
 <tr>
 <td>creative_name</td>
 <td>string</td>
@@ -3433,7 +3465,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 2, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 22, 2023</span>
       
     
   </small>
@@ -3485,7 +3517,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.path", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
     
   </body>
