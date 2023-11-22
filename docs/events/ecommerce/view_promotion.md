@@ -17,7 +17,6 @@ Pairs with "[Select Promotion](../../events/ecommerce/select_promotion.md)".
   data-layer-list_type="<list_type>"
   data-layer-search_term="<search_term>"
   data-layer-search_type="<search_type>"
-  data-layer-index="<index>"
 >
 ```
 
