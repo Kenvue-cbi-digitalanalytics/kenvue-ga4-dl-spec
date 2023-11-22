@@ -10,7 +10,7 @@ Send when a user adds an item to their wishlist.
 
 // Code:
 window.dataLayer = window.dataLayer || [];
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({ event_data: null, ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_to_wishlist",
   event_data: {
