@@ -26,6 +26,10 @@ window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "refund",
+  event_data: {
+    identifier: "<identifier>", // REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc
+    name: '<name>' // REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart
+},
   ecommerce: {
     affiliation: "<affiliation>", // REQUIRED | string | ex. walgreens, listerine online store |
     coupon: "<coupon>", // contextual | string | ex. SUMMER_FUN |
@@ -43,6 +47,8 @@ dataLayer.push({
 
 |Field|Type|Required|Description|Example|Pattern|Minimum Length|Maximum Length|Minimum|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|**identifier**|`string`|required|The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|`contact`, `lead_generation`|||`100`|
+|**name**|`string`|required|The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|||`100`|
 |affiliation|string|required|A product affiliation to designate a supplying company or brick and mortar store location. Event-level and item-level affiliation parameters are independent.|`walgreens`,`listerine online store`|||`100`|
 |coupon|string|contextual|The coupon name/code associated with the event. Event-level and item-level coupon parameters are independent.|`SUMMER_FUN`|||`100`|
 |currency|string|required|Currency of the items associated with the event, in 3-letter ISO 4217 format.|`USD`|`^[A-Z]{3}$`|`3`|`3`|
