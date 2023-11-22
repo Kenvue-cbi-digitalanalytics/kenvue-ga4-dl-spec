@@ -17,9 +17,13 @@ This event should be the first pushed into the data layer on each page. Given ma
 
 // Code
 window.dataLayer = window.dataLayer || [];
-dataLayer.push({ page_data: null, user_data: null });  // Clear the previous attributes.
+dataLayer.push({ event_data: null, page_data: null, user_data: null });  // Clear the previous attributes.
 dataLayer.push({
   event: 'page_view',
+  event_data: {
+    identifier: "<identifier>", // REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc
+    name: '<name>' // REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart
+},
   page_data: {
     page_category: '<category>', // REQUIRED | string | ex. sun protection
     page_subcategory: '<page_subcategory>', // contextual | string | ex. waterproof
@@ -41,8 +45,10 @@ dataLayer.push({
 
 ## Variable Definitions
 
-|Field|Type|Required|Description|Example|Max Length|
+|Field|Type|Required|Description|Example|Maximum Length|
 | --- | --- | --- | --- | --- | --- |
+|**identifier**|`string`|required|The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|`contact`, `lead_generation`|`100`|
+|**name**|`string`|required|The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|`100`|
 |**page_category**|`string`|required|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|`sun protection`|`100`|
 |**page_subcategory**|`string`|recommended|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|`waterproof`|`100`|
 |**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`|
