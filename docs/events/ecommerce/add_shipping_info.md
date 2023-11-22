@@ -18,7 +18,7 @@ Pairs with the following events:
 
 // Code:
 window.dataLayer = window.dataLayer || [];
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({ event_data: null, ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "add_shipping_info",
   event_data: {
