@@ -1,5 +1,5 @@
 # Kenvue Corporate GTM Code
-This document is a quick reference to implement the GTM Container across all Kenvue Corporate sites. For any questions regarding this content please contact Steven Rowe - srowe32@its.jnj.com
+This document is a quick reference to implement the GTM Container across all Kenvue Corporate sites. For any questions regarding this content please contact Steven Rowe - ra-jx2-cbi-digital06@kenvue.com
 
 ## HTML Code For All Production Sites
 Add the following snippet to every page inside the `<head>` tag as high as possible:
