@@ -30,7 +30,7 @@ dataLayer.push({
     page_id: '<page_id>', // REQUIRED | string | ex. 12345
     page_name: '<page_name>', // REQUIRED | string | ex. homepage, search results, product:sample
     page_type: '<page_type>', // REQUIRED | string | ex. article, blog, homepage, product
-    page_referrer: '<page_referrer>', // REQUIRED | string | page_location value for prior page_view event
+    page_referrer: '<page_referrer>', // REQUIRED | string | prior page the user viewed
     site_brand: '<site_brand>', // REQUIRED | string | ex. neutrogena
     site_country: '<site_country>', // REQUIRED | string | ex us, au, is, jp
     site_franchise: '<site_franchise>', // REQUIRED | string | ex essential health, skin care & self care
@@ -55,7 +55,7 @@ dataLayer.push({
 |**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`|
 |**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|`homepage,search results,product:neutrogena hydro boost ge`l|`100`|
 |**page_type**|`string`|required|Used for grouping pages (or screens) into high level types.|`article,blog,homepage,product`|`100`|
-|**page_referrer**|`string`|required|Page_location value for prior page_view event - do not use document.referrer unless initial landing page.|`https://www.tylenol.com/home`|`100`|
+|**page_referrer**|`string`|required|prior page viewed - won't usually match document.referrer unless the prior page was extrernal of the user did a full page refresh .|`https://www.tylenol.com/home`|`100`|
 |**site_brand**|`string`|required|The brand the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`neutrogena`|`100`|
 |**site_country**|`string`|required|The country the site is associated with.<br /><br /> You _**must**_ use the [ISO Standard ==> Alpha-2-Codes](https://www.iso.org/iso-3166-country-codes.html).|`us`|`100`|
 |**site_franchise**|`string`|required|The franchise the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`essential health, skin care & self care`|`100`|
