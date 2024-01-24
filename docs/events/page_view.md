@@ -48,10 +48,10 @@ dataLayer.push({
 | --- | --- | --- | --- | --- | --- |
 |**identifier**|`string`|required|The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|`contact`, `lead_generation`|`100`|
 |**name**|`string`|required|The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|`100`|
-|**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page taxonomy/content type for base page.|`sun protection`|`100`|
+|**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content.|`sun protection`|`100`|
 |**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`|
 |**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|`homepage,search results,product:neutrogena hydro boost ge`l|`100`|
-|**page_type**|`string`|required|Used for grouping pages (or screens) into high level types.|`product page, product listing, article page, article listing, home page, generic page`|`100`|
+|**page_type**|`string`|required|Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy/content type for base page.|`product page, product listing, article page, article listing, home page, generic page`|`100`|
 |**page_referrer**|`string`|required|Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.
 .|`https://www.tylenol.com/home`|`100`|
 |**site_brand**|`string`|required|The brand the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`neutrogena`|`100`|
