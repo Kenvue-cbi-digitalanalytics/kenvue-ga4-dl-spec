@@ -25,17 +25,15 @@ dataLayer.push({
     name: '<name>' // REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart
 },
   page_data: {
-    page_category: '<category>', // REQUIRED | string | ex. sun protection
-    page_subcategory: '<page_subcategory>', // contextual | string | ex. waterproof
+    page_category: '<category>', // OPTIONAL | string | ex. sun protection
     page_id: '<page_id>', // REQUIRED | string | ex. 12345
     page_name: '<page_name>', // REQUIRED | string | ex. homepage, search results, product:sample
-    page_type: '<page_type>', // REQUIRED | string | ex. article, blog, homepage, product
+    page_type: '<page_type>', // REQUIRED | string | ex. product, product listing, article, home
     page_referrer: '<page_referrer>', // REQUIRED | string | prior page the user viewed
     site_brand: '<site_brand>', // REQUIRED | string | ex. neutrogena
     site_country: '<site_country>', // REQUIRED | string | ex us, au, is, jp
     site_franchise: '<site_franchise>', // REQUIRED | string | ex essential health, skin care & self care
     site_region: '<site_region>', // REQUIRED | string | ex. EMEA
-    site_section: '<site_section>', // REQUIRED | string | ex. products
     user_login_state: '<user_login_state>' // REQUIRED | string | ex. authenticated, anonymous 
   },
   user_data: {
@@ -50,8 +48,7 @@ dataLayer.push({
 | --- | --- | --- | --- | --- | --- |
 |**identifier**|`string`|required|The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|`contact`, `lead_generation`|`100`|
 |**name**|`string`|required|The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|`100`|
-|**page_category**|`string`|required|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|`sun protection`|`100`|
-|**page_subcategory**|`string`|recommended|Used for grouping pages (or screens) into subcategories based on their content. Most often aligns with page tags/taxonomy terms or breadcrumbs.|`waterproof`|`100`|
+|**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page taxonomy/content type for base page.|`sun protection`|`100`|
 |**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`|
 |**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|`homepage,search results,product:neutrogena hydro boost ge`l|`100`|
 |**page_type**|`string`|required|Used for grouping pages (or screens) into high level types.|`article,blog,homepage,product`|`100`|
@@ -61,6 +58,5 @@ dataLayer.push({
 |**site_country**|`string`|required|The country the site is associated with.<br /><br /> You _**must**_ use the [ISO Standard ==> Alpha-2-Codes](https://www.iso.org/iso-3166-country-codes.html).|`us`|`100`|
 |**site_franchise**|`string`|required|The franchise the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`essential health, skin care & self care`|`100`|
 |**site_region**|`string`|required|The region the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation - Customer Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/CustomerMappings?:iid=1) for additional definitions.|`EMEA`|`100`|
-|**site_section**|`string`|required|The section of the site that the current page resides in.|products|100|
 |**user_login_state**|`string`|required|Set on all events with the authentication status of the visitor.|`authenticated, anonymous`|`100`|
 |**user_id**|`string`|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|`123456`|`100`|
