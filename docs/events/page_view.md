@@ -28,7 +28,7 @@ dataLayer.push({
     page_category: '<category>', // OPTIONAL | string | ex. sun protection
     page_id: '<page_id>', // REQUIRED | string | ex. 12345
     page_name: '<page_name>', // REQUIRED | string | ex. homepage, search results, product:sample
-    page_type: '<page_type>', // REQUIRED | string | ex. product, product listing, article, home
+    page_type: '<page_type>', // REQUIRED | string | ex. product page, product listing, article page, article listing, home page, generic page
     page_referrer: '<page_referrer>', // REQUIRED | string | prior page the user viewed
     site_brand: '<site_brand>', // REQUIRED | string | ex. neutrogena
     site_country: '<site_country>', // REQUIRED | string | ex us, au, is, jp
@@ -51,7 +51,7 @@ dataLayer.push({
 |**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content. Most often aligns with page taxonomy/content type for base page.|`sun protection`|`100`|
 |**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`|
 |**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|`homepage,search results,product:neutrogena hydro boost ge`l|`100`|
-|**page_type**|`string`|required|Used for grouping pages (or screens) into high level types.|`article,blog,homepage,product`|`100`|
+|**page_type**|`string`|required|Used for grouping pages (or screens) into high level types.|`product page, product listing, article page, article listing, home page, generic page`|`100`|
 |**page_referrer**|`string`|required|Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.
 .|`https://www.tylenol.com/home`|`100`|
 |**site_brand**|`string`|required|The brand the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`neutrogena`|`100`|
