@@ -3516,7 +3516,7 @@
 <td><code>string</code></td>
 <td>required</td>
 <td>The human-readable event name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.</td>
-<td><code>contact</code>, <code>lead_generation</code></td>
+<td><code>page_view, add_to_cart, purchase</code></td>
 <td><code>100</code></td>
 <td>Value not null or empty. Length within limit.</td>
 </tr>
@@ -3525,7 +3525,7 @@
 <td><code>string</code></td>
 <td>required</td>
 <td>The machine-readable event identifier. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the name param.</td>
-<td><code>contact</code>, <code>lead_generation</code></td>
+<td></td>
 <td><code>100</code></td>
 <td>Value not null or empty. Length within limit.</td>
 </tr>
@@ -3534,7 +3534,7 @@
 <td><code>string</code></td>
 <td>required</td>
 <td>A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.</td>
-<td><code>12345</code></td>
+<td></td>
 <td><code>100</code></td>
 <td>Value not null or empty. Length within limit.</td>
 </tr>
@@ -3543,7 +3543,7 @@
 <td><code>string</code></td>
 <td>required</td>
 <td>A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.</td>
-<td><code>homepage,search results,product:neutrogena hydro boost ge</code>l</td>
+<td></td>
 <td><code>100</code></td>
 <td>Value not null or empty. Length within limit.</td>
 </tr>
