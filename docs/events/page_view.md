@@ -21,14 +21,14 @@ dataLayer.push({ event_data: null, page_data: null, user_data: null });  // Clea
 dataLayer.push({
   event: 'page_view',
   event_data: {
-    identifier: "<identifier>", // REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc
-    name: '<name>' // REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart
+    name: '<name>', // REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart
+    identifier: "<identifier>" // REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc
 },
   page_data: {
-    page_category: '<category>', // OPTIONAL | string | ex. sun protection
     page_id: '<page_id>', // REQUIRED | string | ex. 12345
     page_name: '<page_name>', // REQUIRED | string | ex. homepage, search results, product:sample
     page_type: '<page_type>', // REQUIRED | string | ex. product page, product listing, article page, article listing, home page, generic page
+    page_category: '<category>', // OPTIONAL | string | ex. sun protection
     page_referrer: '<page_referrer>', // REQUIRED | string | prior page the user viewed
     site_brand: '<site_brand>', // REQUIRED | string | ex. neutrogena
     site_country: '<site_country>', // REQUIRED | string | ex us, au, is, jp
@@ -44,18 +44,18 @@ dataLayer.push({
 
 ## Variable Definitions
 
-|Field|Type|Required|Description|Example|Maximum Length|
-| --- | --- | --- | --- | --- | --- |
-|**identifier**|`string`|required|The wtb-event machine-readable name. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the <name>.|`contact`, `lead_generation`|`100`|
-|**name**|`string`|required|The wtb-event human-readable name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|`100`|
-|**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content.|`sun protection`|`100`|
-|**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`|
-|**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|`homepage,search results,product:neutrogena hydro boost ge`l|`100`|
-|**page_type**|`string`|required|Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy/content type for base page.|`product page, product listing, article page, article listing, home page, generic page`|`100`|
-|**page_referrer**|`string`|required|Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.
-|**site_brand**|`string`|required|The brand the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`neutrogena`|`100`|
-|**site_country**|`string`|required|The country the site is associated with.<br /><br /> You _**must**_ use the [ISO Standard ==> Alpha-2-Codes](https://www.iso.org/iso-3166-country-codes.html).|`us`|`100`|
-|**site_franchise**|`string`|required|The franchise the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`essential health, skin care & self care`|`100`|
-|**site_region**|`string`|required|The region the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation - Customer Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/CustomerMappings?:iid=1) for additional definitions.|`EMEA`|`100`|
-|**user_login_state**|`string`|required|Set on all events with the authentication status of the visitor.|`authenticated, anonymous`|`100`|
-|**user_id**|`string`|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|`123456`|`100`|
+|Field|Type|Required|Description|Example|Max Len|How to test?|
+| --- | --- | --- | --- | --- | --- | --- |
+|**name**|`string`|required|The human-readable event name. This should be something that an analyst without a deep knowledge of the technical implementation of the site can easily identify the event with. It should be lowercase snake_case.|`contact`, `lead_generation`|`100`| Value not null or empty. Length within limit. |
+|**identifier**|`string`|required|The machine-readable event identifier. This should be a unique value specific to this piece of content, if one exists. If one does not exist, this can also be populated with the same value as the name param.|`contact`, `lead_generation`|`100`| Value not null or empty. Length within limit. |
+|**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.|`12345`|`100`| --- |
+|**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.|`homepage,search results,product:neutrogena hydro boost ge`l|`100`| --- |
+|**page_type**|`string`|required|Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy/content type for base page.|`product page, product listing, article page, article listing, home page, generic page`|`100`| --- |
+|**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content.|`sun protection`|`100`| --- |
+|**page_referrer**|`string`|required|Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.| --- | --- | --- |
+|**site_brand**|`string`|required|The brand the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`neutrogena`|`100`| --- |
+|**site_country**|`string`|required|The country the site is associated with.<br /><br /> You _**must**_ use the [ISO Standard ==> Alpha-2-Codes](https://www.iso.org/iso-3166-country-codes.html).|`us`|`100`| --- |
+|**site_franchise**|`string`|required|The franchise the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation -  Product Hierarchy Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2) for additional definitions.|`essential health, skin care & self care`|`100`| --- |
+|**site_region**|`string`|required|The region the site is associated with. <br /> <br />Please view the [Kenvue Internal Documentation - Customer Mapping](https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/CustomerMappings?:iid=1) for additional definitions.|`EMEA`|`100`| --- |
+|**user_login_state**|`string`|required|Set on all events with the authentication status of the visitor.|`authenticated, anonymous`|`100`| --- |
+|**user_id**|`string`|contextual|The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|`123456`|`100`| --- |
