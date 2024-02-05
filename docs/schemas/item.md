@@ -32,7 +32,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "item_list_id": "<item_list_id>",
   "item_list_name": "<item_list_name>",
   "item_out_of_stock": "<item_out_of_stock>",
-  "item_subscription_type": "<promotion_id>",
+  "item_subscription_type": "<item_subscription_type>",
   "location_id": "<location_id>",
   "promotion_id": "<promotion_id>",
   "promotion_name": "<promotion_name>"
