@@ -3536,7 +3536,7 @@
 <td>A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.</td>
 <td><code>12345</code></td>
 <td><code>100</code></td>
-<td>---</td>
+<td>Value not null or empty. Length within limit.</td>
 </tr>
 <tr>
 <td><strong>page_name</strong></td>
@@ -3545,16 +3545,16 @@
 <td>A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.</td>
 <td><code>homepage,search results,product:neutrogena hydro boost ge</code>l</td>
 <td><code>100</code></td>
-<td>---</td>
+<td>Value not null or empty. Length within limit.</td>
 </tr>
 <tr>
 <td><strong>page_type</strong></td>
 <td><code>string</code></td>
 <td>required</td>
 <td>Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy/content type for base page.</td>
-<td><code>product page, product listing, article page, article listing, home page, generic page</code></td>
+<td><code>home, product category, product detail, article page</code></td>
 <td><code>100</code></td>
-<td>---</td>
+<td><a href="https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing">List of available values.</a></td>
 </tr>
 <tr>
 <td><strong>page_category</strong></td>
