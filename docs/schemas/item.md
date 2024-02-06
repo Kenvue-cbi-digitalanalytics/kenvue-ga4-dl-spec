@@ -8,7 +8,6 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 {
   // Global
   "affiliation": "<affiliation>",
-  "currency": "<currency>",
   "gtin": "<gtin>",
   "item_brand": "<item_brand>",
   "item_category": "<item_category>",
@@ -32,7 +31,7 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
   "item_list_id": "<item_list_id>",
   "item_list_name": "<item_list_name>",
   "item_out_of_stock": "<item_out_of_stock>",
-  "item_subscription_type": "<promotion_id>",
+  "item_subscription_type": "<item_subscription_type>",
   "location_id": "<location_id>",
   "promotion_id": "<promotion_id>",
   "promotion_name": "<promotion_name>"
@@ -46,7 +45,6 @@ An `item` is how GA4 refers to a product.  An item object should be sent wheneve
 |`coupon`|string|contextual|Coupon code used for a purchase.|`SUMMER_FUN`|100|
 |`creative_name`|string|required if item is being sent with a promotion event|The name of a creative used in a promotional spot.|`summer_banner2`|100|
 |`creative_slot`|string|required if item is being sent with a promotion event|The name of a creative slot.|`featured_app_1`|100|
-|`currency`|string|required|The currency, in 3-letter ISO 4217 format.|`USD`|100|
 |`discount`|number|contextual|Monetary value of discount associated with a purchase.|`2.22`|100|
 |`gtin`|string|required|A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. UPCs are a type of GTIN, so they should be added via this parameter.|`012345678905`|
 |`index`|number|contextual|The index/position of the item in a list.|`2`|100|
