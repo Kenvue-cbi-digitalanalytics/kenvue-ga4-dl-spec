@@ -3477,23 +3477,23 @@
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;page_view&#39;</span><span class="p">,</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. pdp_add_to_cart, skin360_pwa_ntg add_to_cart</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;identifier&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. uniquely_created_id, skin360_pwa_ntg_atc</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. page_view, add_to_cart, purchase</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;identifier&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">},</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="nx">page_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nx">page_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_id&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. 12345</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">page_name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. homepage, search results, product:sample</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">page_type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_type&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. product page, product listing, article page, article listing, home page, generic page</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nx">page_category</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;category&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// OPTIONAL | string | ex. sun protection</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">page_referrer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_referrer&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | prior page the user viewed</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="nx">site_brand</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_brand&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. neutrogena</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nx">site_country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_country&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex us, au, is, jp</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nx">site_franchise</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_franchise&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex essential health, skin care &amp; self care</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="nx">site_region</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_region&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. EMEA</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="nx">user_login_state</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;user_login_state&gt;&#39;</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. authenticated, anonymous </span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nx">page_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_id&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">page_name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">page_type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_type&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. home, product category, product detail, article page</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nx">page_category</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;category&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// OPTIONAL | string</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">page_referrer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_referrer&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="nx">site_brand</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_brand&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. Neutrogena, OGX, Bebe</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nx">site_country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_country&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. US, DE, AU</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nx">site_franchise</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_franchise&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. Essential Health, Skin Health</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="nx">site_region</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_region&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. US, EMEA, APAC</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="nx">user_login_state</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;user_login_state&gt;&#39;</span><span class="w"> </span><span class="c1">// REQUIRED | string | authenticated or anonymous</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="p">},</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">  </span><span class="nx">user_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nx">user_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;user_id&gt;&#39;</span><span class="w"> </span><span class="c1">// REQUIRED, if user is logged in | string | ex. 12345</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nx">user_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;user_id&gt;&#39;</span><span class="w"> </span><span class="c1">// REQUIRED, if user is logged in, can be omitted otherwise | string</span>
 <a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="p">});</span>
 </code></pre></div>
@@ -3551,82 +3551,82 @@
 <td><strong>page_type</strong></td>
 <td><code>string</code></td>
 <td>required</td>
-<td>Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy/content type for base page.</td>
+<td>Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy or content type for base page.</td>
 <td><code>home, product category, product detail, article page</code></td>
 <td><code>100</code></td>
-<td><a href="https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing">List of available values.</a></td>
+<td><a href="https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing">List of available values</a></td>
 </tr>
 <tr>
 <td><strong>page_category</strong></td>
 <td><code>string</code></td>
 <td>optional</td>
 <td>Used for grouping pages (or screens) into categories based on their content.</td>
-<td><code>sun protection</code></td>
+<td></td>
 <td><code>100</code></td>
-<td>---</td>
+<td>Optional param. No need to test.</td>
 </tr>
 <tr>
 <td><strong>page_referrer</strong></td>
 <td><code>string</code></td>
 <td>required</td>
 <td>Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.</td>
-<td>---</td>
-<td>---</td>
-<td>---</td>
+<td></td>
+<td></td>
+<td>Value is an empty string — or a valid URL address.</td>
 </tr>
 <tr>
 <td><strong>site_brand</strong></td>
 <td><code>string</code></td>
 <td>required</td>
-<td>The brand the site is associated with. <br /> <br />Please view the <a href="https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2">Kenvue Internal Documentation -  Product Hierarchy Mapping</a> for additional definitions.</td>
-<td><code>neutrogena</code></td>
+<td>Brand the site is associated with.</td>
+<td><code>Neutrogena, OGX, Bebe</code></td>
 <td><code>100</code></td>
-<td>---</td>
+<td><a href="https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing">List of available values</a></td>
 </tr>
 <tr>
 <td><strong>site_country</strong></td>
 <td><code>string</code></td>
 <td>required</td>
-<td>The country the site is associated with.<br /><br /> You <em><strong>must</strong></em> use the <a href="https://www.iso.org/iso-3166-country-codes.html">ISO Standard ==&gt; Alpha-2-Codes</a>.</td>
-<td><code>us</code></td>
-<td><code>100</code></td>
-<td>---</td>
+<td>Country the site is associated with. It must follow this <a href="https://www.iso.org/iso-3166-country-codes.html">ISO Standard ==&gt; Alpha-2-Codes</a> — and consist of capital letters only.</td>
+<td><code>US, DE, AU</code></td>
+<td><code>2</code></td>
+<td>Value is a valid 2-letter country ISO code.</td>
 </tr>
 <tr>
 <td><strong>site_franchise</strong></td>
 <td><code>string</code></td>
 <td>required</td>
-<td>The franchise the site is associated with. <br /> <br />Please view the <a href="https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/ProductHierarchyMappings?:iid=2">Kenvue Internal Documentation -  Product Hierarchy Mapping</a> for additional definitions.</td>
-<td><code>essential health, skin care &amp; self care</code></td>
+<td>Franchise the site is associated with.</td>
+<td><code>Essential Health, Skin Health</code></td>
 <td><code>100</code></td>
-<td>---</td>
+<td><a href="https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing">List of available values</a></td>
 </tr>
 <tr>
 <td><strong>site_region</strong></td>
 <td><code>string</code></td>
 <td>required</td>
-<td>The region the site is associated with. <br /> <br />Please view the <a href="https://prodbitabcon.jnj.com/#/site/Consumer/views/GlobalConsumerCommercialHierarchies/CustomerMappings?:iid=1">Kenvue Internal Documentation - Customer Mapping</a> for additional definitions.</td>
-<td><code>EMEA</code></td>
+<td>Region the site is associated with.</td>
+<td><code>US, EMEA, APAC</code></td>
 <td><code>100</code></td>
-<td>---</td>
+<td><a href="https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing">List of available values</a></td>
 </tr>
 <tr>
 <td><strong>user_login_state</strong></td>
 <td><code>string</code></td>
 <td>required</td>
-<td>Set on all events with the authentication status of the visitor.</td>
+<td>Set on all events with the authentication status of the current visitor.</td>
 <td><code>authenticated, anonymous</code></td>
 <td><code>100</code></td>
-<td>---</td>
+<td>Value is either <em>authenticated</em> or <em>anonymous</em></td>
 </tr>
 <tr>
 <td><strong>user_id</strong></td>
 <td><code>string</code></td>
 <td>contextual</td>
-<td>The id of the user currently logged in to the site, if the site offers authentication and the user is authenticated.</td>
-<td><code>123456</code></td>
+<td>ID of the user currently logged in to the site, if the site offers authentication and the user is authenticated.</td>
+<td></td>
 <td><code>100</code></td>
-<td>---</td>
+<td>Test only if user is authenticated (ie. user_login_state is <em>authenticated</em>) — then, must be not null or empty, length within limit.</td>
 </tr>
 </tbody>
 </table>
@@ -3650,7 +3650,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 6, 2024</span>
   </span>
 
     
