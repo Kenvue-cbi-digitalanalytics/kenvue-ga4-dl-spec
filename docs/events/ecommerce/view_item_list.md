@@ -4,22 +4,6 @@ Fire whenever a user sees multiple product links in a list that forward the user
 
 This event should also be fired for the "Filter By Group" component when the list is initially displayed, or when a user applies a facet (but only when that component contains one or more products).
 
-## HTML Data Attributes
-
-```html
-<a href="<link_url>"
-  data-layer-event="view_item_list"
-  data-layer-identifier="<identifier>"
-  data-layer-name="<name>"
-  data-layer-facets="<facets>"
-  data-layer-list_type="<list_type>"
-  data-layer-list_type="<item_list_id>"
-  data-layer-list_type="<item_list_name>"
-  data-layer-search_term="<search_term>"
-  data-layer-search_type="<search_type>"
->
-```
-
 ## Javascript Code
 
 ```js
