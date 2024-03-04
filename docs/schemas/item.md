@@ -2,6 +2,11 @@
 
 An `item` is how GA4 refers to a product.  An item object should be sent whenever a product is displayed, selected, added to a cart, or purchased.
 
+??? "DO NOT populate ANY item parameter with a string value if unavailable"
+
+    If the "item_id", "item_name", etc. is _**NOT**_ available, _**DO NOT**_ populate with an empty string (ex. "") or undefined as a string (ex. "undefined"). This value must _**ONLY**_ be populated with valid values (ex. item_id: ABC123, item_name: Hydro Boost Face Wash, etc.). If this value is not available, then either _**DO NOT**_ include the parameter in the data layer push or populate with an undefined object (not a string, ex. item_variant: undefined).
+
+
 ## Object format
 
 ```json
