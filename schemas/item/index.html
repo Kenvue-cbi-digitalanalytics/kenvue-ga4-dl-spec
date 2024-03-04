@@ -3469,10 +3469,9 @@
 
 <h1 id="item-object">Item Object</h1>
 <p>An <code>item</code> is how GA4 refers to a product.  An item object should be sent whenever a product is displayed, selected, added to a cart, or purchased.</p>
-<details>
-<summary>DO NOT populate ANY item parameter with a string value if unavailable</summary>
-<p>If the "item_id", "item_name", etc. is <em><strong>NOT</strong></em> available, <em><strong>DO NOT</strong></em> populate with an empty string (ex. "") or undefined as a string (ex. "undefined"). This value must <em><strong>ONLY</strong></em> be populated with valid values (ex. item_id: ABC123, item_name: Hydro Boost Face Wash, etc.). If this value is not available, then either <em><strong>DO NOT</strong></em> include the parameter in the data layer push or populate with an undefined object (not a string, ex. item_variant: undefined).</p>
-</details>
+<p>!!! "DO NOT populate ANY item parameter with a string value if unavailable"</p>
+<div class="highlight"><pre><span></span><code>If the &quot;item_id&quot;, &quot;item_name&quot;, etc. is _**NOT**_ available, _**DO NOT**_ populate with an empty string (ex. &quot;&quot;) or undefined as a string (ex. &quot;undefined&quot;). This value must _**ONLY**_ be populated with valid values (ex. item_id: ABC123, item_name: Hydro Boost Face Wash, etc.). If this value is not available, then either _**DO NOT**_ include the parameter in the data layer push or populate with an undefined object (not a string, ex. item_variant: undefined).
+</code></pre></div>
 <h2 id="object-format">Object format</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="c1">// Global</span>
