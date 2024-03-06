@@ -28,7 +28,7 @@ dataLayer.push({
     page_id: '<page_id>', // REQUIRED | string
     page_name: '<page_name>', // REQUIRED | string
     page_type: '<page_type>', // REQUIRED | string | ex. home, product category, product detail, article page
-    page_category: '<category>', // OPTIONAL | string
+    page_category: '<category>', // contextual | string
     page_referrer: '<page_referrer>', // REQUIRED | string
     site_brand: '<site_brand>', // REQUIRED | string | ex. Neutrogena, OGX, Bebe
     site_country: '<site_country>', // REQUIRED | string | ex. US, DE, AU
@@ -51,8 +51,8 @@ dataLayer.push({
 |**page_id**|`string`|required|A durable identifier for a page that will enable measurement over time despite the page URL, title, etc changing. Generally sourced from the site content management system.||`100`|Value not null or empty. Length within limit.|
 |**page_name**|`string`|required|A unique name for this page independent of page title. Google does not tend to use custom page names, but it's a mainstay in Adobe and therefore is included here for compatibility as well as for its usefulness generally.||`100`|Value not null or empty. Length within limit.|
 |**page_type**|`string`|required|Used for grouping pages (or screens) into high level types. Most often aligns with page taxonomy or content type for base page.|`home, product category, product detail, article page`|`100`|[List of available values](https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing)|
-|**page_category**|`string`|optional|Used for grouping pages (or screens) into categories based on their content.||`100`|Optional param. No need to test.|
-|**page_referrer**|`string`|required|Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.|||Value is an empty string — or a valid URL address.|
+|**page_category**|`string`|contextual|Used for grouping pages (or screens) into categories based on their content.||`100`|Optional param. No need to test.|
+|**page_referrer**|`string`|required|Prior page viewed - for SPA portions of the site, this most likely will not be document.referrer and might need to be pulled from the prior history state or some other stored value to provide more accurate context.|`https://www.neutrogena.com/`|`100`|Value is an empty string — or a valid URL address.|
 |**site_brand**|`string`|required|Brand the site is associated with.|`Neutrogena, OGX, Bebe`|`100`|[List of available values](https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing)|
 |**site_country**|`string`|required|Country the site is associated with. It must follow this [ISO Standard ==> Alpha-2-Codes](https://www.iso.org/iso-3166-country-codes.html) — and consist of capital letters only.|`US, DE, AU`|`2`|Value is a valid 2-letter country ISO code.|
 |**site_franchise**|`string`|required|Franchise the site is associated with.|`Essential Health, Skin Health`|`100`|[List of available values](https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing)|
