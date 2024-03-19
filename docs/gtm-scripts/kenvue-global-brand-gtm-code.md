@@ -1,8 +1,8 @@
-# Kenvue DXP Global GTM Code
-This document is a quick reference to implement the Global GTM Container across all Kenvue Corporate sites. For any questions regarding this content please contact Steven Rowe - srowe32@its.jnj.com
+# Kenvue DXP GTM Code
+This document is a quick reference to implement the GTM Container across all Kenvue brand sites. For any questions regarding this content please contact Analytics Team - ra-jx2-cbi-digital06@kenvue.com
 
 ## HTML Code For All Production Sites
-Add the following snippet to every page inside the `<head>` tag as high as possible:
+Add the following snippet to every page inside the `<head>` as high as possible:
 
 ```html
 <!-- Google Tag Manager -->
@@ -24,7 +24,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 ```
 
 ## HTML Code For All Non-Production Sites
-Add the following snippet to every page inside the `<head>` tag as possible:
+Add the following snippet to every page inside the `<head>` as high as possible:
 
 ```html
 <!-- Google Tag Manager -->
