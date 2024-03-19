@@ -1,5 +1,5 @@
 # Kenvue DXP OneTrust Snippet
-This document is a quick reference to implement the OneTrust snippet across all Kenvue brand and corporate sites. For any questions regarding this content please contact Analytics Team - ra-jx2-cbi-digital06@kenvue.com
+This document is a quick reference to implement the OneTrust snippet across all Kenvue brand, HCP and corporate sites. For any questions regarding this content please contact Analytics Team - ra-jx2-cbi-digital06@kenvue.com
 
 ## HTML Code For All Production Sites
 Add the following snippet to every page inside the `<head>`, as high as possible — **it has to be fired before any other analytics snippets.**
