@@ -37,7 +37,8 @@ dataLayer.push({
     user_login_state: '<user_login_state>' // REQUIRED | string | authenticated or anonymous
   },
   user_data: {
-    user_id: '<user_id>' // REQUIRED, if user is logged in, can be omitted otherwise | string
+    user_id: '<user_id>', // optional | string | ex. 12345...
+    user_type: '<user_type>' // optional | string | ex. new, returning, ...
   }
 });
 ```
@@ -58,4 +59,5 @@ dataLayer.push({
 |**site_franchise**|`string`|required|Franchise the site is associated with.|`Essential Health, Skin Health`|`100`|[List of available values](https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing)|
 |**site_region**|`string`|required|Region the site is associated with.|`US, EMEA, APAC`|`100`|[List of available values](https://docs.google.com/spreadsheets/d/1laiSuNBb7Y5ZCh7dJpM2T9tF0sR14bPI1wOy_PA9ma8/edit?usp=sharing)|
 |**user_login_state**|`string`|required|Set on all events with the authentication status of the current visitor.|`authenticated, anonymous`|`100`|Value is either *authenticated* or *anonymous*|
-|**user_id**|`string`|contextual|ID of the user currently logged in to the site, if the site offers authentication and the user is authenticated.||`100`|Test only if user is authenticated (ie. user_login_state is *authenticated*) — then, must be not null or empty, length within limit.|
+|**user_id**|`string`|optional|ID of the user currently logged in to the site, if the site offers authentication and the user is authenticated.|`100`|Test only if authentication is available — then, must be a valid ID, with length within limit, undefined object is permitted as well.|
+|**user_type**|`string`|optional|Type of authenticated user.|`100`|Test only if authentication is available — then, must be a valid ID, with length within limit, undefined object is permitted as well.|
