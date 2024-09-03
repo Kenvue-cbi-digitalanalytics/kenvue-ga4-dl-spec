@@ -1,37 +1,6 @@
----
-title: Click
----
-
 # Click
 
-These events will be automatically detected and fired for any `<a>` tag clicked by a user. The data attributes and events are primarily here for cases in which a non anchor tag is used as a link. 
-
-For example, if a `<button>` tag is used in combination with Javascript to represent a download link, you would need to add these attributes to manually fire the event.
-
-## HTML Data Attributes
-
-```html
-<button
-  data-layer-event="click"
-  data-layer-identifier="<identifier>"
-  data-layer-name="<name>"
-  data-layer-component_ancestry="<component_ancestry>"
-  data-layer-category="<category>"
-  data-layer-category2="<category2>"
-  data-layer-category3="<category3>"
-  data-layer-category4="<category4>"
-  data-layer-category5="<category5>"
-  data-layer-link_id="<link_id>"
-  data-layer-link_classes="<link_classes>"
-  data-layer-link_text="<link_text>"
-  data-layer-link_url="<link_url>"
-  data-layer-link_hostname="<link_hostname>"
-  data-layer-navigation_ancestry="<navigation_ancestry>"      
-  data-layer-outbound="<outbound>"
-  data-layer-region_ancestry="<region_ancestry>"
-  data-layer-protocol="<type>"
->
-```
+Fire whenever a user clicks on a link.
 
 ## Javascript Code
 
