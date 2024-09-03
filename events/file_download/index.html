@@ -688,15 +688,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#html-data-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTML Data Attributes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#javascript-code" class="md-nav__link">
     <span class="md-ellipsis">
       Javascript Code
@@ -3533,15 +3524,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#html-data-attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTML Data Attributes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#javascript-code" class="md-nav__link">
     <span class="md-ellipsis">
       Javascript Code
@@ -3578,53 +3560,34 @@
 
 
 <h1 id="file-download">File Download</h1>
-<p>These events will be automatically detected and fired for any link clicked by the user that leads to a file. The data attributes and events are primarily here for cases in which a non anchor tag is used as a link. </p>
-<p>For example, if a <code>&lt;button&gt;</code> tag is used in combination with Javascript to represent a download link, you would need to add these attributes to manually fire the event.</p>
-<h2 id="html-data-attributes">HTML Data Attributes</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&lt;link_url&gt;&quot;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="na">data-layer-event</span><span class="o">=</span><span class="s">&quot;file_download&quot;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="na">data-layer-identifier</span><span class="o">=</span><span class="s">&quot;&lt;identifier&gt;&quot;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="na">data-layer-name</span><span class="o">=</span><span class="s">&quot;&lt;name&gt;&quot;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  <span class="na">data-layer-component_ancestry</span><span class="o">=</span><span class="s">&quot;&lt;component_ancestry&gt;&quot;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="na">data-layer-link_id</span><span class="o">=</span><span class="s">&quot;&lt;link_id&gt;&quot;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="na">data-layer-link_classes</span><span class="o">=</span><span class="s">&quot;&lt;link_classes&gt;&quot;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="na">data-layer-link_text</span><span class="o">=</span><span class="s">&quot;&lt;link_text&gt;&quot;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  <span class="na">data-layer-link_url</span><span class="o">=</span><span class="s">&quot;&lt;link_url&gt;&quot;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  <span class="na">data-layer-link_hostname</span><span class="o">=</span><span class="s">&quot;&lt;link_hostname&gt;&quot;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  <span class="na">data-layer-navigation_ancestry</span><span class="o">=</span><span class="s">&quot;&lt;navigation_ancestry&gt;&quot;</span>      
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  <span class="na">data-layer-outbound</span><span class="o">=</span><span class="s">&quot;&lt;outbound&gt;&quot;</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  <span class="na">data-layer-region_ancestry</span><span class="o">=</span><span class="s">&quot;&lt;region_ancestry&gt;&quot;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  <span class="na">data-layer-protocol</span><span class="o">=</span><span class="s">&quot;&lt;type&gt;&quot;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  <span class="na">data-layer-file_extension</span><span class="o">=</span><span class="s">&quot;&lt;file_extension&gt;&quot;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  <span class="na">data-layer-file_name</span><span class="o">=</span><span class="s">&quot;&lt;file_name&gt;&quot;</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">&gt;</span>
-</code></pre></div>
+<p>These events will be automatically detected and fired for any link clicked by the user that leads to a file.</p>
+<p>In case it does not happen — link to a file has to be tagged with a Javascript code, described below.</p>
 <h2 id="javascript-code">Javascript Code</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// When:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">// User clicks a non anchor tag used for a file download, i.e. &lt;button&gt;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// Code</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[];</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// Clear the previous event_data object.</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;file_download&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;identifier&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. uniquely_created_id</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. Learn More, How it works, Ingredients, Connect</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nx">component_ancestry</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;component_ancestry&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string | string - delimeted (~) | ex. hero~product carousel</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nx">link_classes</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_classes&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. button-red </span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nx">link_id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_id&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. submit-button</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nx">link_text</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_text&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. click here</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="nx">link_url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_url&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. https://www.example.com/form</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nx">link_hostname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_hostname&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. https://www.example.com</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nx">navigation_ancestry</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;navigation_ancestry&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string - delimeted (~) | ex. about~our ceo</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="nx">outbound</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;outbound&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | boolean | ex. false</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nx">region_ancestry</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;region_ancestry&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string - delimeted (~) | ex. header~navigation</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nx">protocol</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;type&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. http, https, mailto, tel</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="nx">file_extension</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;file_extension&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// recommended | string | ex. pdf</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">    </span><span class="nx">file_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;file_name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// recommended | string | ex. example.pdf</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="p">});</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// When:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">// User clicks a non anchor tag used for a file download, i.e. &lt;button&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// Code</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">dataLayer</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[];</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span><span class="w">  </span><span class="c1">// Clear the previous event_data object.</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;file_download&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">event_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;identifier&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. uniquely_created_id</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. Learn More, How it works, Ingredients, Connect</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nx">component_ancestry</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;component_ancestry&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string | string - delimeted (~) | ex. hero~product carousel</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nx">link_classes</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_classes&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. button-red </span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nx">link_id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_id&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. submit-button</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nx">link_text</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_text&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. click here</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">link_url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_url&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. https://www.example.com/form</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">link_hostname</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;link_hostname&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. https://www.example.com</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nx">navigation_ancestry</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;navigation_ancestry&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string - delimeted (~) | ex. about~our ceo</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">outbound</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;outbound&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | boolean | ex. false</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="nx">region_ancestry</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;region_ancestry&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string - delimeted (~) | ex. header~navigation</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nx">protocol</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;type&gt;&quot;</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. http, https, mailto, tel</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nx">file_extension</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;file_extension&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// recommended | string | ex. pdf</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="nx">file_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&lt;file_name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// recommended | string | ex. example.pdf</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="p">});</span>
 </code></pre></div>
 <h2 id="variable-definitions">Variable Definitions</h2>
 <table>
@@ -3773,7 +3736,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 19, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 3, 2024</span>
   </span>
 
     
