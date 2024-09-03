@@ -1,6 +1,8 @@
 # Click
 
-Fire whenever a user clicks on a link.
+Fire whenever a user clicks on a link, that is required to be tracked.
+
+All outbound links are tracked automatically. Other needs to be tagged with Javascript code, described below.
 
 ## Javascript Code
 
