@@ -1,30 +1,8 @@
 # File Download
 
-These events will be automatically detected and fired for any link clicked by the user that leads to a file. The data attributes and events are primarily here for cases in which a non anchor tag is used as a link. 
+These events will be automatically detected and fired for any link clicked by the user that leads to a file.
 
-For example, if a `<button>` tag is used in combination with Javascript to represent a download link, you would need to add these attributes to manually fire the event.
-
-## HTML Data Attributes
-
-```html
-<a href="<link_url>"
-  data-layer-event="file_download"
-  data-layer-identifier="<identifier>"
-  data-layer-name="<name>"
-  data-layer-component_ancestry="<component_ancestry>"
-  data-layer-link_id="<link_id>"
-  data-layer-link_classes="<link_classes>"
-  data-layer-link_text="<link_text>"
-  data-layer-link_url="<link_url>"
-  data-layer-link_hostname="<link_hostname>"
-  data-layer-navigation_ancestry="<navigation_ancestry>"      
-  data-layer-outbound="<outbound>"
-  data-layer-region_ancestry="<region_ancestry>"
-  data-layer-protocol="<type>"
-  data-layer-file_extension="<file_extension>"
-  data-layer-file_name="<file_name>"
->
-```
+In case it does not happen — link to a file has to be tagged with a Javascript code, described below.
 
 ## Javascript Code
 
