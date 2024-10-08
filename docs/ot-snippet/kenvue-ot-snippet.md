@@ -2,7 +2,7 @@
 This document is a quick reference to implement the OneTrust snippet across all Kenvue brand, HCP and corporate sites. For any questions regarding this content please contact Analytics Team - ra-jx2-cbi-digital06@kenvue.com
 
 ## HTML Code For All Production Sites
-Add the following snippet to every page inside the `<head>`, as high as possible — **it has to be fired before any other analytics snippets.** First part, so called default consent state tag, is required, for every single site. Second part, control script, has to be added only if cookie banner is required to be displayed on the page (ie. for EU, CH, UK, BR, SA, US, CA, JP and TH).
+Add the following snippet to every page inside the `<head>`, as high as possible — **it has to be fired before any other analytics snippets.** First part, so called default consent state tag, is required, for every single site. Second part, control script, has to be added only if cookie banner is required to be displayed on the page (ie. for EU, CH, UK, BR, SA, US, CA, TH).
 
 ```html
 <!-- Default consent tag -->
