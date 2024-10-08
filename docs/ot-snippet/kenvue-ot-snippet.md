@@ -35,9 +35,9 @@ function OptanonWrapper() { }
 | --- | --- | --- |
 |**SECURITY_STORAGE_DEFAULT_STATE**|`string`|Always "granted".|
 |**FUNCTIONALITY_STORAGE_DEFAULT_STATE**|`string`|Always "granted".|
-|**ANALYTICS_STORAGE_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, JP and TH — "denied". All other — "granted".|
-|**AD_STORAGE_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, JP and TH — "denied". All other — "granted".|
-|**AD_DATA_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, JP and TH — "denied". All other — "granted".|
-|**AD_PERSONALIZATION_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, JP and TH — "denied". All other — "granted".|
-|**PERSONALIZATION_STORAGE_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, JP and TH — "denied". All other — "granted".|
+|**ANALYTICS_STORAGE_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, TH — "denied". All other — "granted".|
+|**AD_STORAGE_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, TH — "denied". All other — "granted".|
+|**AD_DATA_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, TH — "denied". All other — "granted".|
+|**AD_PERSONALIZATION_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, TH — "denied". All other — "granted".|
+|**PERSONALIZATION_STORAGE_DEFAULT_STATE**|`string`|Determined by country domain. EU, CH, UK, BR, SA, US, CA, TH — "denied". All other — "granted".|
 |**DOMAIN_ID**|`string`|OneTrust Domain ID generated in OneTrust admin panel.|
