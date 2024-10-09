@@ -3507,9 +3507,9 @@
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="nx">page_data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nx">page_id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_id&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">page_name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_name&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">page_type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_type&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. home, product category, product detail, article page</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nx">page_category</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;category&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// contextual | string</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">page_url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_url&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">page_url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_url&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// optional | string</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nx">page_type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_type&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. home, product category, product detail, article page</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="nx">page_category</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;category&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// optional | string</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="nx">page_referrer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;page_referrer&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string</span>
 <a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nx">site_brand</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_brand&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. Neutrogena, OGX, Bebe</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nx">site_country</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;site_country&gt;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// REQUIRED | string | ex. US, DE, AU</span>
@@ -3574,6 +3574,15 @@
 <td>Value not null or empty. Length within limit.</td>
 </tr>
 <tr>
+<td><strong>page_url</strong></td>
+<td><code>string</code></td>
+<td>optional</td>
+<td>The URL of the page currently being viewed. That param should be included only, if there is a risk, that we won't be able to detect a proper URL automatically — for example, if analytics is implemented in a sandboxed environment, like Shopify Web Pixel.</td>
+<td><code>https://www.neutrogena.com/products</code></td>
+<td></td>
+<td>Value is an empty string — or a valid URL address.</td>
+</tr>
+<tr>
 <td><strong>page_type</strong></td>
 <td><code>string</code></td>
 <td>required</td>
@@ -3585,20 +3594,11 @@
 <tr>
 <td><strong>page_category</strong></td>
 <td><code>string</code></td>
-<td>contextual</td>
+<td>optional</td>
 <td>Used for grouping pages (or screens) into categories based on their content.</td>
 <td></td>
 <td><code>100</code></td>
 <td>Optional param. No need to test.</td>
-</tr>
-<tr>
-<td><strong>page_url</strong></td>
-<td><code>string</code></td>
-<td>required</td>
-<td>The URL of the page currently being viewed. This value will include the full, unaltered URL of the page/screen the user is currently viewing, including query parameters, fragments, etc. For Shopify sites, this must be the URL of the page the user see and NOT the sandbox URL.</td>
-<td></td>
-<td><code>https://www.neutrogena.com/products</code></td>
-<td>Valid current URL address</td>
 </tr>
 <tr>
 <td><strong>page_referrer</strong></td>
@@ -3694,7 +3694,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 27, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2024</span>
   </span>
 
     
